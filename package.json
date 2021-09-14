@@ -1,0 +1,40 @@
+{
+  "name": "pratipbot",
+  "version": "0.0.1",
+  "description": "A cool bot for cool servers 😎",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BokChoyWarrior/pratipbot.git"
+  },
+  "keywords": [
+    "discord",
+    "bot"
+  ],
+  "author": "https://github.com/BokChoyWarrior",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/BokChoyWarrior/pratipbot/issues"
+  },
+  "homepage": "https://github.com/BokChoyWarrior/pratipbot#readme",
+  "dependencies": {
+    "@discordjs/builders": "^0.6.0",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "discord-api-types": "^0.23.1",
+    "discord.js": "^13.1.0",
+    "dotenv": "^10.0.0",
+    "typescript": "^4.4.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.2",
+    "nodemon": "^2.0.12"
+  }
+}
