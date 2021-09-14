@@ -11,7 +11,16 @@ const token = process.env.TOKEN;
 const commands = [
   new SlashCommandBuilder().setName('ping').setDescription('Replies with pong!'),
   new SlashCommandBuilder().setName('server').setDescription('Replies with server info!'),
-  new SlashCommandBuilder().setName('user').setDescription('Replies with user info!'),
+  new SlashCommandBuilder().setName('cheese').setDescription('🧀'),
+  new SlashCommandBuilder()
+    .setName('rps')
+    .setDescription('Rock, paper, scissors!')
+    .addStringOption((option) => option.setName('choice')
+      .setDescription('Choose your item')
+      .setRequired(true)
+      .addChoice('Rock', 'Rock')
+      .addChoice('Paper', 'Paper')
+      .addChoice('Scissors', 'Scissors')),
 ]
   .map((command) => command.toJSON());
 
